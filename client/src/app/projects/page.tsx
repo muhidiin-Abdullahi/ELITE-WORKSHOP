@@ -12,7 +12,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Projects",
   description:
-    "Portfolio of workshop projects from ELITE WORKSHOP LTD when published.",
+    "Fitted kitchens, media walls, room dividers, windows, and doors from ELITE WORKSHOP LTD projects.",
   path: "/projects",
 });
 

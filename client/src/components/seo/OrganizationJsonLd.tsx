@@ -6,6 +6,7 @@ export function OrganizationJsonLd() {
     "@type": "Organization",
     name: siteConfig.companyName,
     url: siteConfig.siteUrl,
+    logo: new URL(siteConfig.logoSrc, siteConfig.siteUrl).toString(),
   };
 
   if (siteConfig.email) {

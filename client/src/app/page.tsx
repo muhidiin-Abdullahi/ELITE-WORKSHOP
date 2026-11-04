@@ -17,10 +17,11 @@ import { ServiceCard } from "@/features/services/ServiceCard";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Workshop services for building and furniture projects",
+  title: "ELITE WORKSHOP LTD | PVC, Aluminium, Kitchens & Decorated Furniture",
   description:
-    "ELITE WORKSHOP LTD — PVC works, aluminium works, kitchen furniture, and decorated furniture services.",
+    "PVC windows and doors, aluminium works, fitted kitchens, and decorated furniture, measured, built, and installed by ELITE WORKSHOP LTD.",
   path: "/",
+  absoluteTitle: true,
 });
 
 /* Editorial mosaic: each tile's shape is matched to its photo's crop. */

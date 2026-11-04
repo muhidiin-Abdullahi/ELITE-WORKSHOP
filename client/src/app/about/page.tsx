@@ -13,7 +13,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "About Us",
   description:
-    "Introduction to ELITE WORKSHOP LTD and its workshop service categories.",
+    "ELITE WORKSHOP LTD combines workshop fabrication with on-site installation for PVC and aluminium works, kitchens, and decorated furniture.",
   path: "/about",
 });
 
