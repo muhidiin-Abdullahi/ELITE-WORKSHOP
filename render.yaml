@@ -1,0 +1,28 @@
+# Render Blueprint for the ELITE WORKSHOP API (server/).
+# The website (client/) is deployed separately on Vercel.
+# Reference: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: elite-workshop-api
+    runtime: node
+    plan: free
+    # Cannot be changed after the service is created.
+    region: frankfurt
+    rootDir: server
+    # NODE_ENV=production makes npm skip devDependencies, but the build needs
+    # TypeScript, so they are included explicitly.
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/v1/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "24"
+      # Render asks for these two when the Blueprint is first created.
+      # Later changes are made in the service's Environment tab.
+      - key: MONGODB_URI
+        sync: false
+      - key: CLIENT_URL
+        sync: false
